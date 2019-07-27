@@ -1,0 +1,57 @@
+<?php
+include "arjun.php";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+ input[type=submit]{
+background:green;
+color:blue;
+}
+input[type=button]{
+background:red;
+color:green;
+}
+input[type=reset]{
+background:blue;
+color:yellow;
+}
+#main td.a{color:slateblue;}
+</style>
+</head>
+<body bgcolor="gold">
+<form   action="tweet.php" method = "POST">
+<h1 align="center" style="color:red;background:dodgerblue;">SVCE-MCA</h1>
+<table cellpadding="2" width="10%"  align="center" background="gold" id="main"
+cellspacing="2" style="border:2px dotted red;">
+
+<tr>
+<td colspan=2>
+<center><font size=4 color="green"><b>Student Login Form</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td class="a">username</td>
+<td><input type="text" name="username" size="30"></td>
+</tr>
+
+<tr>
+<td class="a">roll</td>
+<td><input type="roll" name="roll" 
+size="30"></td>
+</tr>
+<td><input type="reset"></td>
+<td colspan="2"><input type="submit" value="Submit" /></td>
+</tr>
+</table>
+</form>
+<marquee direction="bottom" bgcolor="yellow">This webpage is developed by SVCE-MCA-2019 all copy rights in 2019 by the Google </marquee>
+<center><input type="button" name="close" value="Home" onclick="fun()"></center>
+<script>
+function fun(){
+window.location.href("today.php");
+}</script> 
+</body>
+</html>

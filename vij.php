@@ -1,0 +1,46 @@
+<?php
+$username = $_POST['username'];
+$roll = $_POST['roll'];
+$MobileNo = $_POST['MobileNo'];
+                if(!empty($username) || !empty($roll) || !empty($MobileNo))
+{
+                     $host = "localhost";
+                      $dbusername = "root";
+                  $dbpassword = "";
+                $dbname = "registration";
+               $conn = mysqli_connect($host, $dbusername, $dbpassword, $dbname);
+                if(mysqli_connect_error())
+       {
+                 die('Connect Error ('. mysqli_connect_errno() .') '. mysqli_connect_error());
+       }
+        else
+        {
+                    $SELECT = "SELECT roll From registration Where roll = ?  Limit 1";
+                      $INSERT = "INSERT Into registration (username,MobileNo,roll) values (?,?,?)";
+                    $stmt = $conn->prepare($SELECT);
+                      $stmt->bind_param("s",$roll);
+                     $stmt->execute();
+                  $stmt->bind_result($roll);
+                 $stmt->store_result();
+                 $num = $stmt->num_rows;
+                  if($num==0)
+                 {
+                    $stmt->close();
+                    $stmt = $conn->prepare($INSERT);
+                     $stmt->bind_param("sss",$username,$MobileNo,$roll);
+                    $stmt->execute();
+                   echo '<html><head><body bgcolor="mediumseagreen"><a href="today.php">click here to login for feedback</a></body></html>';
+                 }
+             else
+            {
+               echo '<html><head><body bgcolor="aqua"><a href="login.php">this roll number is already used click here to register new user </a></body></html>';
+              }
+             $stmt->close();
+             $conn->close();
+     }
+  }
+   else
+{
+echo "vp";
+}	
+?>

@@ -1,0 +1,30 @@
+<html>
+<head>
+<style>
+input[type=button]{
+color:red;
+background:green;
+}
+</style></head>
+<body style="background:dodgerblue;">
+
+<form action="today.php" method="POST">
+<center><input type="button" name="close" value="Home" onclick="fun()"></center>
+<h1 align="center" style="color:blue;">SV College of Engineering (SVCE)
+<h2 align="center" style="color:orange;">Karakambadi Road, Tirupati, Andhra Pradesh, (INDIA)
+</h2>
+<h3 align="center" style="color:gray;>info@svcolleges.edu.in</h3>
+<h3 align="center" style="color:black;">+91 8886644985 (Principal's office)</h3>
+
+<h3 align="center" style="color:black;">+91 8886644986 (Admin office)</h3>
+
+
+
+<script>
+function fun(){
+window.location.href("today.php");
+}
+</script>
+</form>
+</body>
+</html>

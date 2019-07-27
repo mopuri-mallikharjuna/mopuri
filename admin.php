@@ -1,0 +1,22 @@
+<html><head><style>
+input[type=button]{
+color:red;
+background:yellow;
+}</style></head>
+<body style="background:lightgray;">
+<form action="today.php" method="POST">
+<h1 align="center" style="color:red;background:dodgerblue;">Admissions - SVCE Tirupati</h1>
+<h1 align="center" style="color:green;background:blue;"> Admission Process</h2>
+ 
+<p style="color:black;">UG (B.Tech) admissions conducted through the common entrance test (EAMCET) by the Andhra Pradesh state government. While 70% of the seats allotted are based on merit in EAMCET, 30% of the seats are earmarked for Management Quota. In addition, the Engineering Diploma holders, based on their merit at ECET (FDH), are admitted into Lateral Entry (II year B. Tech Courses) to the tune of 20% of the total intake.
+For more information regarding the EAMCET process, please see https://apeamcet.nic.in/
+PG (M.Tech) admissions - 70% of M.Tech Admissions are made based on merit in GATE / PGECET. Remaining 30% of the seats are earmarked for Management Quota. For more information regarding the PGECET process, 
+please see www.appgecet.nic.in
+MBA & MCA Admissions - 70% of MBA & MCA Admissions are made based on merit in ICET and remaining 30% of the seats are earmarked for Management Quota. For more information regarding the ICET process, 
+please see www.apicet.nic.in</p>
+<center><input type="button" name="close" value="Home" onclick="fun()"></center>
+<script>
+function fun(){
+window.location.href("today.php");
+}</script></form></body>
+</html>
