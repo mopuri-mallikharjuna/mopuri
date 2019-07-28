@@ -47,7 +47,7 @@ transition:0.6s;
 <div class="topnav"><ul>
   <li><a class="active" href="today.php">SVCE  Home</a></li>
  <li> <a href="about.php">About Us</a></li>
-  <li><a href="rank.php">Rankings Of SVCE</a></li>
+  <li><a href="rank.php">Rankings of SVCE</a></li>
   <li><a href="institutions.php">Institutions </a></li>
 <li><a href="regi.php">Registration Student</a></li>
 <li><a href="login.php">Feedback</a></li>
