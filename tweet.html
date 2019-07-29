@@ -19,12 +19,12 @@ $result = mysqli_query($conn,$sql);
                  
 if(mysqli_num_rows($result)==1)
 {
-echo '<html><body bgcolor="mediumseagreen"><h1 align="center" style="background:dodgerblue;color:white;"><a href="rama.php">Click here to give feedback</a></h1></body></html>';
+echo '<html><body bgcolor="mediumseagreen"><h1 align="center" style="background:dodgerblue;color:white;"><a href="rama.html">Click here to give feedback</a></h1></body></html>';
   $conn->close();
 }
 else 
 {
-echo '<html><body bgcolor="gray"><B>YOUR NOT A REGISTERED USER</B><a href="regi.php">Click here to Re-Login</a></body></html>';
+echo '<html><body bgcolor="gray"><B>YOUR NOT A REGISTERED USER</B><a href="regi.html">Click here to Re-Login</a></body></html>';
 }
 }
 }
