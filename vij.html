@@ -29,11 +29,11 @@ $MobileNo = $_POST['MobileNo'];
                     $stmt = $conn->prepare($INSERT);
                      $stmt->bind_param("sss",$username,$MobileNo,$roll);
                     $stmt->execute();
-                   echo '<html><head><body bgcolor="mediumseagreen"><a href="today.php">click here to login for feedback</a></body></html>';
+                   echo '<html><head><body bgcolor="mediumseagreen"><a href="index.html">click here to login for feedback</a></body></html>';
                  }
              else
             {
-               echo '<html><head><body bgcolor="aqua"><a href="login.php">this roll number is already used click here to register new user </a></body></html>';
+               echo '<html><head><body bgcolor="aqua"><a href="login.html">this roll number is already used click here to register new user </a></body></html>';
               }
              $stmt->close();
              $conn->close();
